@@ -1,0 +1,15 @@
+/* 
+:is() 
+the :is() CSS pseudo-class function takes a selector list as its argument, and selectors any element that can be selected by one of the selectors in that list.
+
+write less code
+*/
+
+/* si quiero seleccionar un hover para el h2 de nav, el header y el section, tendría que escribir las etiquetas así */
+/* nav h2:hover, header h2:hover, section h2:hover{
+ color: red;
+} */
+/* is permite escribir lo mismo de forma mas abreviada */
+:is(nav, header, section) h2:hover{
+ color:red;
+}

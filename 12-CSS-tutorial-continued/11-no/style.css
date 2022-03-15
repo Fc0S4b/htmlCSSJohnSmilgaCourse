@@ -1,0 +1,9 @@
+/* :not() 
+the :not() css pseudo-class represents elements that do not match a list of selectors. Since it prevents specific items from being selected
+ */
+
+/* selecciona todo menos el elemento especificado en not */
+
+.special :not(h1) {
+  color: red;
+}

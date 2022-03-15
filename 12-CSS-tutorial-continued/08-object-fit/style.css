@@ -1,0 +1,22 @@
+/* 
+object-fit: cover, contain, fill, none, scale-down */
+
+img{
+ width: 100%;
+ display: block;
+ height: 300px;
+ object-fit: cover;
+ /* se ajustarán las imágenes sin distorsionarse de acuerdo al width y height configurado */
+}
+
+.one{
+ float: left;
+ width: 45%;
+ margin-right: 5%;
+}
+.two{
+ float: left;
+ width: 45%;
+ margin-right: 5%;
+}
+/* si se cambia el tamaño de la imagen recortándola para que se vea bien, entonces la imagen mas grande se distorsionará */

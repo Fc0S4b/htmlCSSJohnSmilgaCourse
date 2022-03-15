@@ -1,0 +1,16 @@
+/* para usar los font awesome, descargué el archivo desde la web fontawesome.com, en docs, y luego hosting web, ese archivo se copia y pega entero en la carpeta de trabajo, luego se linkea la ruta de esa carpeta al archivo html. Los íconos se sacan desde la misma web en donde se copia etiqueta con sus respectivas clases (hay una forma de pago y otra gratuita). Posteriormente se pueden añadir mas clases (como special) y se puede estilizar los íconos libremente */
+
+
+/* .fa-solid{
+ font-size: 2rem;
+ color: red;
+} */
+.fa-house{
+ font-size: 2rem;
+ color: red;
+}
+
+.special{
+ font-size: 4rem;
+ color: blue;
+}

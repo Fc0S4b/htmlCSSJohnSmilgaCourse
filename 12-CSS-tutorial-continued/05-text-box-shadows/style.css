@@ -1,0 +1,29 @@
+/* 
+text-shadow
+box-shadow
+ */
+
+/* primer valor para la sombra en x, el segundo para y el tercero es para difuminación */
+
+/* hay recursos como css text shadow generator */
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+/* box shadow igual configura la sombra en el primer parámetro para x, el segundo para y y el tercero para la difuminación. Hay varios recursos externos para configurar box-shadow */
+.box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 20px;
+  box-shadow: 54px 5px 5px green;
+  transition: all 2s ease-in-out;
+}
+
+/* este sería recurso externo */
+
+.box:hover {
+  -webkit-box-shadow: 61px 65px 63px 32px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 61px 65px 63px 32px rgba(0, 0, 0, 0.75);
+  box-shadow: 61px 65px 63px 32px rgba(0, 0, 0, 0.75);
+}

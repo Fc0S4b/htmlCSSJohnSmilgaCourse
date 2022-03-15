@@ -1,0 +1,16 @@
+
+/* otra forma de importar los íconos es usando el link cdn extraído desde fontawesome cdnjs, esta forma es más rápida ya que no se tiene que descargar archivos. Lo inconveniente es que depende de terceros, de la continuidad del servidor que provee el link, pero se ahorra memoria al no tener que subir archivos adicionales */
+
+/* .fa-solid{
+ font-size: 2rem;
+ color: red;
+} */
+.fa-house{
+ font-size: 2rem;
+ color: red;
+}
+
+.special{
+ font-size: 4rem;
+ color: blue;
+}
