@@ -1,0 +1,63 @@
+/* el problema que hay es que se ve muy brillante la imagen de fondo, no se puede ver bien el texto, entonces se crea un overlay o imagen superpuesta para aminorar el brillo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  color: white;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.big-img {
+  background: url('../big.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+.small-img {
+  background: url('../images/folder-img.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.folder-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../big.jpeg') center/cover no-repeat fixed;
+  /* asegúrate de agregar comas en las propiedades de background para separarlas excepto para la última opción en donde se agrupan todas las propiedades con el parámetro de url, center/cover debe ir en ese orden y no-repeat fixed puede ser fixed no-repeat */
+}
+
+/* este es un ejemplo para usar el generador de gradientes de colorzilla, al configurar el gradiente, se copia y pega el código en un selector */
+.colorzilla {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,d121c5+50,7db9e8+100&0.41+0,1+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(30, 87, 153, 0.41) 0%,
+    rgba(209, 33, 197, 0.71) 50%,
+    rgba(125, 185, 232, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(30, 87, 153, 0.41) 0%,
+    rgba(209, 33, 197, 0.71) 50%,
+    rgba(125, 185, 232, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 87, 153, 0.41) 0%,
+    rgba(209, 33, 197, 0.71) 50%,
+    rgba(125, 185, 232, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#691e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}

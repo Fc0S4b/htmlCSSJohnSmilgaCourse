@@ -1,0 +1,50 @@
+/* PADDING */
+h1,p{
+ color:white;
+}
+
+/* h1{
+ background:red;
+padding-top:40px;
+padding-right:20px;
+padding-bottom:30px;
+padding-left:50px;
+
+}
+p{
+ background: blue; */
+ /* forma resumida de escribir: */
+ /* padding:40px; */
+ /* padding: top-bottom left-right */
+ /* padding:30px 60px; */
+ /* para los 4 lados, arriba, derecha, abajo e izquierda */
+ /* padding: 40px 20px 10px 30px;
+} */
+/* MARGIN y BORDER*/
+/* los navegadores usan un margen por defecto, les asigna un espacio entre los elementos, resetear con margin:0 */
+*{
+ margin:0;
+}
+/* si los elementos no se pegan quitando el margen en un elemento, es porque el otro elemento tiene otro valor de margen, cuando se superponen se suman entre sí*/
+h1{
+ background: red;
+ padding: 20px;
+ /* margin-top:2rem; */
+ margin: 3rem;
+ /* border-style: solid;
+ border-width:10px;
+ border-color:chartreuse; */
+ /* border-bottom:0.5rem dashed blue; */
+ border-bottom-style: double;
+ border-bottom-color:green;
+ border-bottom-width:20px;
+ 
+}
+p{
+ background:blue;
+ border: 1rem dashed red;
+ /* margin:20px 40px; */
+ margin: 4rem 4px 50px 10px;
+ padding: 5px 20px 50px 40px;
+
+}

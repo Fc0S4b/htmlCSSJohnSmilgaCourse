@@ -1,0 +1,34 @@
+#first{
+ color: white;
+ background-color: black;
+}
+
+#second{
+ color: red;
+ background:yellow;
+ /* background-image:  */
+}
+/* ctrl+space para abrir sugerencias de colores */
+/* en google para ver el nombre de colores css */
+
+#third{
+ color: rgb(255,0,0);
+ background: rgb(0,0,0);
+}
+
+#four{
+ color: rgba(233,100,30,0.5);
+}
+/* 
+HSL
+HEX Values #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+           10     11    12    13    14    15
+           #FF0000- Red
+           #00FF00- Green */
+
+#five{
+ color: #ff0000;
+ background: #000;
+}
+/* herramientas externas para elección de colores coolors.co con space para ir cambiando de paletas en la página*/

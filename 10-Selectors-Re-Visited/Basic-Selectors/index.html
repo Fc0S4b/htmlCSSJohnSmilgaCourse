@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Basic selector</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- basic selector -->
+ <h1 id="heading">i'm simple heading</h1>
+ <h1 class="heading">i'm simple heading</h1>
+ <p>hello world</p>
+ <!-- end of basic selector -->
+ <!-- descendant selector -->
+ <div class="header">
+  <h1>i'm a child and descendant</h1>
+ </div>
+
+ <div class="header">
+  <h1>i'm a child and descendant</h1>
+
+  <ul>
+   <li>
+    <h1>i'm a child and descendant</h1>
+   </li>
+  </ul>
+
+ </div>
+ <!-- end of descendant selector -->
+ <!-- ::first-letter and ::first-line -->
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel saepe laudantium, impedit molestias suscipit eius
+  beatae tempora, ducimus vitae eos rem quam incidunt deserunt dolorem porro! Illo a aliquam consequuntur?</p>
+ <!-- end of ::first-letter and ::first-line -->
+
+ <!-- hover -->
+ <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam veniam a. Adipisci nostrum ullam aperiam,
+  asperiores suscipit quia quos?</div>
+ <div class="header">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis officiis odit veritatis, atque delectus natus.
+  Soluta totam numquam quia doloremque.
+ </div>
+ <a href="#">i'm simple link</a>
+ <br>
+ <br>
+ <br>
+ <!-- end of hover -->
+
+ <!-- links pseudo-class -->
+ <a href="#">general link</a>
+ <a href="https://www.google.com">visited link</a>
+ <a href="#">hover link</a>
+ <a href="#">active link</a>
+ <a> simple link</a>
+
+
+
+ <!-- end of links pseudo-class -->
+
+ <!-- root element -->
+ <h1 class="absolute">i'm absolute</h1>
+ <h1 class="relative">i'm relative</h1>
+ <p class="absolute">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non maiores dolores, vitae iure laborum
+  beatae temporibus consectetur placeat quisquam id.</p>
+ <p class="relative">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non maiores dolores, vitae iure laborum
+  beatae temporibus consectetur placeat quisquam id.</p>
+ <!-- end of root element -->
+</body>
+
+</html>

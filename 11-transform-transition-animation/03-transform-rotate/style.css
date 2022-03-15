@@ -1,0 +1,26 @@
+/* transform: translate(), scale(), rotate(), skew() */
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: red;
+transform: rotateZ(-20deg);
+  
+}
+.two {
+  background: blue;
+  transform: rotate(20deg);
+  /* rotación en grados */
+  
+}
+.three {
+  background: green;
+  transform: rotateX(50deg);
+ 
+ /* al rotar sobre X con rotateX, se irá achicando el elemento hasta llegar a los 90grados en donde desaparece */
+ transform: rotateY(50deg);
+}

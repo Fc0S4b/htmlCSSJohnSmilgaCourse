@@ -1,0 +1,32 @@
+/* display: none- remove from the flow, hide element collapse the space
+opacity: 0, visibility: hidden - hides element preserves the space */
+
+div {
+  background: #f15025;
+  margin: 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* remueve completamente el elemento, el flujo se altera */
+.none {
+  display: none;
+}
+
+/* acá el flujo no se altera, solo se hace invisible */
+.opacity-1 {
+  opacity: 1;
+}
+
+/* se hace invisible mientras menos sea la opacidad */
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-0 {
+  opacity: 0;
+}
+/* se hace invisible si solo ajustamos la visibilidad como hidden (escondida) */
+.visibility {
+  visibility: visible; /*default*/
+  visibility: hidden; /*no se ve el elemento*/
+}

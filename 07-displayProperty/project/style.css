@@ -1,0 +1,40 @@
+*{
+ margin:0;
+}
+
+body{
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ background: #f1f5f9;
+ line-height: 1.5;
+}
+
+/* lo comúnn es ir agregando un color de fondo distinto para cada sección */
+
+.section{
+ padding: 5rem 0;
+ background: #fff;
+
+}
+
+.section-title{
+ text-align: center;
+ text-transform: capitalize;
+}
+
+.title-underline{
+ height:0.25rem;
+ width: 5rem;
+ background: cornflowerblue;
+ margin: 0 auto;
+ margin-bottom: 2rem;
+ /* puede ser margin: 0 auto 2rem auto */
+}
+
+.section-center{
+ width: 90vw;/*esto es mejor para la forma responsiva*/
+ margin: 0 auto; /*en vez de centrarlo directamente*/
+ max-width: 1170px; /*no va a crecer más que este valor, así no se incomoda la visualización a medida que crecen las pantallas, si no, siempre ocuparía un 90% del ancho del visor, 1170px es un valor popular*/
+ /* border: 2px solid red; */
+}
+
+/* se ajustan los márgenes para section-center y no para section porque se tiene mejor control del contenido a medida que cambian los tamaños de pantalla. El background del div section no se altera, siempre está entero en el fondo, solo cambie el section-center de forma responsiva sin tener que usar mediaqueries */

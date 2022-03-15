@@ -1,0 +1,34 @@
+/* OUTLINE, OFFSET */
+
+.links{
+ margin:3rem;
+}
+
+a{
+ background: #689f3f;
+ text-decoration: none;
+ padding: 1.2rem 1.5rem;
+ color:#222;
+ text-transform:uppercase;
+ margin: 0 20px;
+}
+
+#one{
+ border: 0.2rem solid #222;
+
+ 
+
+}
+
+/* outline "mueve un borde" ya sea más hacia el exterior del contenido (si tiene valores positivos el offset) o más hacia el interior del contenido (si tiene valores negativos) */
+
+#two{
+ outline-width: 0.2rem;
+ outline-color: #222;
+ outline-style: solid;
+ /* outline-offset: 10px; */
+ /* outline-offset: -10px; */
+  outline: 0.2rem solid red;
+  outline-offset: -5px;
+ 
+}

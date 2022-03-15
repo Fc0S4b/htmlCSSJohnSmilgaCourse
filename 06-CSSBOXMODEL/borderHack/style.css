@@ -1,0 +1,4 @@
+/* este truco es para ver la disposición de tus elementos en el navegador, tener una idea sobre como está ordenado el esquema y como están separados los elementos, sirve también para debugguear. Recuerda setear en el selector * esta propiedad en el devtools del navegador */
+*{
+ border: 2px solid red;
+}

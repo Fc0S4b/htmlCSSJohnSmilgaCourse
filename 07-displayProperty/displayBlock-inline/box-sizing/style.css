@@ -1,0 +1,13 @@
+/* display:inline-block;
+does not start a new line 
+browser respects margin, width, height */
+
+
+a{
+ font-size: 1.5rem;
+ background:red;
+ width:40px;
+ height:40px;
+ margin: 40px 10px;
+ display:inline-block; /*si se usa display block, se convertirán los elementos de línea a bloque pero en cada línea, inline-block permite que los elementos en linea sean bloques en la misma línea, de esta forma se puede aplicar width, height y margin sin tener que pasar a una nueva línea*/
+}

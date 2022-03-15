@@ -1,0 +1,9 @@
+/* en las herramientas del navegador, en la parte de styles de los elementos html, los estilos que no son escritos por nosotros se llaman user agent stylesheet */
+
+/* los estilos propios aplicados tendrán prioridad por sobre los default */
+h2{
+ color:red;
+ font-size:30px;
+}
+
+/* esta lección fue más de ver las herramientas del navegador */

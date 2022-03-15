@@ -1,0 +1,21 @@
+/* 
+ELEMENTS HAVE IT SET BY DEFAULT
+BLOCK: Always starts a new line and spans full width
+INLINE: Does not start a new line and spans only content
+ */
+
+ /* el bloque siempre empieza en una nueva línea y con todo el ancho, el elemento inline ocupa espacio en la misma línea ocupando el espacio del contenido*/
+ .block{
+  background:blue;
+  color:white;
+  display:block; /*nada pasa porque ya se muestran en bloque por default estos elementos*/
+  display:inline;/*cambia disposición a inline*/
+ }
+
+ .inline{
+  background:red;
+  color:white;
+  display: inline; /*nada pasa*/
+  display:block;/*cambia a bloque*/
+ }
+ 

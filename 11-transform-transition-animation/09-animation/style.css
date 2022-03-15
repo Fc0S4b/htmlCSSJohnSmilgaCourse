@@ -1,0 +1,52 @@
+/* 
+transition 0 = 100%
+from start state to end state
+ANIMATION 0 1% 2%..... 100%
+multiple states */
+
+div {
+  width: 200px;
+  height: 200px;
+  color: white;
+  margin: 10px;
+}
+
+.transition {
+  background: red;
+  transition: all 2s linear;
+}
+
+.transition:hover {
+  background: yellow;
+  transform: translateX(100px);
+}
+
+.animation {
+  background: blue;
+  /* animation-name: move;
+ animation-duration: 10s; */
+  /* 50% sería en el segundo 5 y así sucesivamente (aquí se aplica los porcentajes que se definen en el keyframes */
+  /* animation-iteration-count: 3; */
+  /* animation-iteration-countse refiere a cuantas veces se va a repetir la animación, 1 es una vez, puede ser valores decimales así como una vez y media 1.5 o infinito = infinite */
+  /* ahora viene la forma corta de escribirlo */
+  animation: move 5s infinite;
+}
+
+/* se define un nombre move que debe coincidir con animation-name para saber que animación debe aplicarse al elemento */
+@keyframes move {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(100px);
+    background: red;
+  }
+  75% {
+    transform: translateX(-200px);
+    background: yellow;
+  }
+  100% {
+    transform: translateX(20px);
+    background: green;
+  }
+}

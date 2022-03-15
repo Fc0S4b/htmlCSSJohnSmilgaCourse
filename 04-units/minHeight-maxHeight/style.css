@@ -1,0 +1,32 @@
+/* height: auto; min-height; max-height;overflow */
+
+* {
+  margin: 0;
+}
+
+.navbar {
+  background: blue;
+  height: 6rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.banner {
+  background: red;
+  /* height: calc(100vh - 6rem); */
+  min-height: calc(100vh - 6rem);
+  /* Si el texto, el contenido, no llega a un valor particular que establecimos para su minheight entonces solo se creará la altura definida en minheight Si el texto es mayor que el valor actual del minheight que dijiste, se añadirá mas altura */
+  /* la máxima altura creará un límite, acá se controla el contenido sobrante con hidden o scroll, descoméntalo para ver como funciona */
+  /* max-height:90vh;
+ overflow: hidden;
+ overflow:scroll; */
+}
+/* por default height es igual a auto, es decir, se ajusta automáticamente al tamaño del div según su contenido */
+.example {
+  background: green;
+  width: 10rem;
+  height: 25rem;
+  /* para manejar el contenido desbordante: se puede esconder o escrolear */
+  overflow: hidden;
+  overflow: scroll;
+}

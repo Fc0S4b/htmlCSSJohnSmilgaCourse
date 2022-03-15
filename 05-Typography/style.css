@@ -1,0 +1,98 @@
+/* font-size - size of the fonts
+font-family - describes the font of the element */
+
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  font-family: Verdana;
+  font-size: 50px;
+}
+
+/* font-stack generic family
+serif, sans-serif, cursive, fantasy, monospace */
+
+/* si el navegador no encuentra la primera fuente, buscará la siguiente y así sucesivamente */
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*  Google Fonts
+generic serif, sans-serif, cursive, fantasy, monospace
+mientras más fuentes externas, mas lento se ponen las solicitudes al servidor
+*/
+
+/* para usar @import, se debe escribir en la parte superior de la hoja de estilos ya que debe leerse el recurso antes de aplicarse la fuente :
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');*/
+/* de todas formas el navegador igual hará coincidir las fuentes con las fuentes disponibles que tenga en caso de que no funcionen los recursos externos */
+h3 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* fuentes del sistema -> cargan más rápido
+
+system fonts - a font that's already installed on the device of the user.
+-fast load times
+-less headaches
+-project will look different (diferente setup de windows vs mac por ejemplo)
+
+"-apple-system, BlinkMacSystemFont" - system of font on apple devices
+
+"Segoe UI" - Used on Windows Systems
+"Roboto" - System Font for Android Devices */
+/* Github usa este método (compruébalo inspeccionando la página */
+/* se configura una fuente para cada sistema existente */
+.fuente-sistema {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* font-weight how thick or thin characters in text should be font-style sets font style for a text */
+
+/* si se importa un estilo de fuente que solo tiene un font-weight de 400, no hará efecto si se cambia a un font-weight de 800. Si se desea reiniciar el estilo, se debe setear a valor default, es decir font-style: normal  */
+.font-weight{
+ font-weight: 900;
+ font-style:normal;
+}
+/* text-align, text-indent */
+.text-align{
+text-align: right;
+text-align:center;
+text-align:left; 
+text-indent: 50px;
+}
+
+/* line-height - if number * by font-size
+letter-spacing
+word-spacing
+text-transform
+text-decoration */
+
+.moreProperties{
+ line-height:60px; /*mas separación entre líneas, usar solo número sin unidades, será relativo al font-size multiplicando a ese valor, esto aplica para el font-size de este particular elemento si tiene configurado como prioridad, si no lo tiene, buscará el font-size de otro elemento*/
+
+}
+
+h1{
+ font-size:40px;
+ text-decoration:line-through;
+}
+
+.one{
+ letter-spacing:5px;
+ text-decoration:overline;
+}
+
+.two{
+ word-spacing:10px;
+ text-transform:lowercase;
+}
+
+a{
+ font-size: 3rem;
+ text-decoration:none;
+}
+
+.three{
+ text-transform:uppercase;
+}

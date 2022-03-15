@@ -1,0 +1,53 @@
+/* 
+BLOCK: browser respects width/height, top/bottom margin
+INLINE: browser does not respect width/height,
+top/bottom margin
+Navbar
+list-type-type:property
+descendant selectors */
+
+/* el navegador respeta los cambios en altura/ancho y margin para elementos bloque*/
+/* div{
+ background:blue;
+ color:white;
+ width: 300px;
+ height: 200px;
+ margin-top: 20px;
+ margin-bottom:200px;
+} */
+/* pero para el span no los respeta, no surten los cambios */
+/* span{
+ background:blue;
+ color:white;
+ width: 300px;
+ height: 200px;
+ margin-top: 20px;
+ margin-bottom:200px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  color: #f15025;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background: #222;
+  display: block; /* ya que el navegador no respeta las propiedades margin o padding lo suficiente para los elementos inline, convierto los inline a block con display*/
+  padding: 5px;
+}
+
+/* si solo tengo un ul y a como descendiente, entonces el color verde se aplicará a todos los a, inclusive a los que están entre li */
+/* ul a{
+ color:green;
+} */

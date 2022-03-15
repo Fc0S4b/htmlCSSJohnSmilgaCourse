@@ -1,0 +1,69 @@
+/* position: static default, always positioned according to the normal flow,
+position:relative - position relative to it's normal, position.
+top,bottom, left, right */
+
+/* la posición estática es el flujo que se ve por defecto, dos después de uno porque dos está escrito después de uno, así tal cual */
+
+/* ejemplo de position fixed en navbar */
+.navbar {
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  /* position:fixed; */
+  position: sticky;
+  margin-top: 0;
+  top: 100px;
+  /* se puede usar valores negativos en top para la position sitcky */
+  /* left:0; */
+  width: 100%;
+}
+div {
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
+}
+
+/* la posición relativa es relativa con respecto a la posición normal que tendría el elemento, con esto se puede usar top, bottom, left, right para ajustar relativamente la posición del elemento */
+
+.one {
+  background: blue;
+  color: white;
+  /* position:relative; */
+  /* top: 200px; */
+  /* bottom: 2rem; */
+  /* left:20%; */
+  /* right:40px; */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+/* la diferencia entre la posición relativa y la absoluta es que otros contenidos no se ajustarán para encajar en el espacio que deja el elemento, mientras cambiamos el elemento, no vamos a usar ningún otro contenido para llenar este vacío */
+.two {
+  background: green;
+  color: white;
+  /* position:relative; */
+}
+/* position: absolute - relative to the parent with position: relative.
+position: fixed - relative to viewport(screen), stays as we are scrolling will use other content to fill out the space */
+
+/* special tendría de padre al p de clase two, luego un div y luego el body, pero no es hijo de la clase one  */
+/* si ninguno de los padres tiene position:relative, entonces el elemento será posicionado relativamente respecto al body porque este sería el padre más cercano a la posición relativa*/
+
+/* la posición absoluta y fija siempre dejará el espacio anterior del elemento original para que lo rellene otro contenido en cambio la posición relativa no, se mantiene el espacio original sin ser rellenado por otro elemento, mientras que el elemento con posición relativa se puede mover a otro lugar*/
+.special {
+  background: pink;
+  font-size: 20px;
+  color: #222;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: blue;
+}
+
+/* position sticky - toggles between relative and fixed once the position is met in the viewport - them it sticks 
+one of the values top, left, bottom, right */

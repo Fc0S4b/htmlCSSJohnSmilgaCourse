@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+.nav {
+  height: 5rem;
+  background: #222;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  /* si no se fija el z-index, entonces el nav no aparece como sticky, y esto es porque el contendor hero tiene position relative lo que hace salirse del flujo normal de la ventana y altera la position sticky. z-index hará que se vea por encima del flujo normal (con fixed, se dejaría un espacio del nav que sería ocupado por el hero por lo que disminuiría su tamaño, además cambiaría su ancho y no cubriría todo el ancho del visor, se tendría que agregar un width. Sticky respeta los espacios y consigue estar en el flujo normal del visor)*/
+}
+
+.nav-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  /* border: 2px solid red;
+ padding-left: 2rem; */
+}
+
+.hero {
+  min-height: calc(100vh - 5rem);
+  background: rgb(105, 62, 27);
+  position: relative;
+}
+
+/* cambios cuando la pantalla sea mayor de 768 px */
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        rgba(105, 62, 27, 0.5),
+        rgba(105, 62, 27, 1)
+      ),
+      url('./bcg-images/hero-bcg.jpg') center/cover;
+    min-height: calc(100vh - 5rem);
+  }
+}
+
+.hero-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  color: #fff;
+  position: absolute;
+  /* como fijamos position absolute aquí, el contenedor padre deberá tener position relative, si no, será absolute respecto al body */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* si centramos solo con absolute, top y left, la caja de hero-center se centrará pero desde el vértice superior izquierdo, para centrarlo desde el centro del div, se transforma -50% tanto el ancho como el alto para que el centro sea desde el centro de la caja y no desde una esquina */
+  border: 2px solid red;
+  text-align: center;
+}
+
+.hero-center h1 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+.hero-center p {
+  max-width: 35em;
+  margin: 0 auto;
+  /* agregamos margin 0 auto para centrar el párrafo que es independiente del título y para que tenga sentido con el max-width */
+  margin-bottom: 1.5rem;
+}
+.hero-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.temp {
+  min-height: 100vh;
+  background: red;
+}

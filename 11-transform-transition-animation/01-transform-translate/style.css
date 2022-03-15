@@ -1,0 +1,26 @@
+/* transform: translate(), scale(), rotate(), skew() */
+
+
+div{
+ width: 150px;
+ height: 150px;
+ display: inline-block;
+
+}
+
+.one{
+ background:red;
+ transform: translateX(-30px);
+ /* si es porcentaje será con respecto al ancho en x y la altura si es en y */
+}
+.two{
+ background:blue;
+ transform: translateY(-40px);
+
+}
+.three{
+ background:green;
+ /* transform: translateX(75); */
+ transform: translate(200px,300px);
+ /* el primer parámetro es para X el segundo para Y */
+}

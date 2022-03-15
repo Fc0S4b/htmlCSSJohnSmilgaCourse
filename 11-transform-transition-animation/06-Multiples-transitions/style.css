@@ -1,0 +1,26 @@
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+div:hover {
+  background: coral;
+}
+
+.one {
+  background: red;
+}
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+  transition-property: background, border-radius;
+  transition-duration: 4s, 2s;
+  /* múltiples propiedades separadas por coma, al igual que el tiempo, se puede usar un solo tiempo para todas las propiedades */
+}
+
+.three:hover {
+  border-radius: 50%;
+}

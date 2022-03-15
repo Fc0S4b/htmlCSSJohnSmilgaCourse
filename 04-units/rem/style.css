@@ -1,0 +1,24 @@
+/* rem - relative, depends on root
+1rem = base value (16px)*number (1)
+*/
+
+
+
+
+.absolute{
+ font-size:32px;
+}
+
+/* cambiar a rem acá en relative no cambiaría el tamaño de letra porque depende de la configuración raíz, osea del navegador, no del div */
+.relative{
+ font-size: 2rem;
+}
+
+div{
+ font-size:5px;
+}
+
+/* una forma de cambiar la configuración raíz es cambiando la configuración para todo el doc html */
+html{
+ font-size: 10px;
+}

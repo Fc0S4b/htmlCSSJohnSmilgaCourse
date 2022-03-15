@@ -1,0 +1,48 @@
+/* PIXELS - absolute values, one dot on the screen
+Font-Size- size of font
+width- width of an element
+height - height of an element */
+
+h1{
+ font-size:60px;
+ background: blue;
+ color:white;
+ width: 200px;
+ height: 400px;
+}
+
+/*  % - percent. RELATIVE INIT/VALUE. Depends on the parent */
+
+.outer{
+ width: 300px;
+ height:300px;
+ background:blue;
+
+}
+/* este div inner no funcionaría si no se establecen las unidades del elemento padre ya que tiene medidas relativas */
+.inner{
+ width: 50%;
+ height: 50%;
+ background:red;
+}
+
+/* em- relative, depends on parent
+1em- 16px default browser style
+1em = base value (16px)* number (1) = 16px
+2em = base value (16px) * number (2) = 32px
+2em = base value (10px) *number (2) =20px */
+
+
+.absolute{
+ font-size:32px;
+}
+
+/* 2em va a ser lo mismo que 32px ya que el navegado tiene por default tamaño del font-size 16px */
+.relative{
+ font-size: 2em;
+}
+/* el texto relativo en el div se verá más chico porque cambié el valor base, osea asigné al contenedor base (div) un tamaño de 10px de fuente y por ende, el selector .relative asigna 2em según los 10 px, osea que el texto se verá en 20px */
+div{
+ font-size:10px;
+}
+

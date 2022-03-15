@@ -1,0 +1,110 @@
+/* basic selectors */
+
+/* * {
+ color:red;
+} */
+
+#heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: green;
+}
+
+p {
+  letter-spacing: 5px;
+}
+
+/* descendant and child selectors */
+
+div h1 {
+  color: red;
+}
+
+/* hijos directos de div */
+div > h1 {
+  color: blue;
+}
+/* más específico que anteriores no es estrictamente directo*/
+.header h1 {
+  color: green;
+}
+/* descendientes e hijos directos */
+.header > h1 {
+  color: purple;
+}
+
+/* ::first-line ::first-letter */
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 150%;
+}
+
+/* :hover */
+
+div:hover {
+  color: green;
+}
+
+.header:hover {
+  color: white;
+  background: blue;
+  letter-spacing: 5px;
+}
+
+/* a:hover{
+ text-decoration: none;
+ font-size: 20px;
+ background: pink;
+} */
+
+/* los links tienen pseudo-clases especiales tales como
+:link - unvisited links with href
+:hover - hover
+:active - as the user click's
+a - all links
+ */
+
+a {
+  display: block;
+  background: red;
+  margin: 10px;
+  /* los selecciona a todos los a inclusive a los que no tiene href */
+}
+
+a:link {
+  color: white;
+  /* no selecciona a los a que no tienen href */
+}
+
+a:visited {
+  color: green;
+}
+a:active{
+ color:blue;
+}
+
+/* :root root element of the document, higher specificity 
+html element
+general styles
+css variables
+ */
+:root{
+ font-size: 20px;
+}
+.absolute{
+ font-size: 24px;
+}
+.relative{
+ font-size: 1.5rem; 
+ /* depende del valor base de :root 20*1.5= 30px */
+}

@@ -1,0 +1,20 @@
+/* Horizontal centering */
+ .block{
+  background:blue;
+  color:white;
+  width: 300px;/*establecemos un ancho para achicar el elemento desde los bordes y así poder centrarlo*/
+  margin:0 auto; /*para poder centrar un elemento bloque, le damos un valor de separación top-bottom (en este caso no quería separación entre elementos por lo tanto le doy valor 0) luego auto que centra automáticamente en left-right */
+  /* margin-left: auto; se puede setear de forma individual para centrar desde la izquierda o derecha*/
+  /* margin-right:auto; */
+ }
+
+ /* si queremos centrar elementos inline, debemos trabajar con los elementos padres en este caso sería el body, para los elementos de bloque en este caso solo afectaría al contenido que es el texto, para los elementos inline se centra todo el elemento*/
+ .inline{
+  background:red;
+  color:white;
+  
+ }
+
+ body{
+  text-align: center;
+ }

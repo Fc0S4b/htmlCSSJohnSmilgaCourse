@@ -1,0 +1,48 @@
+div{
+height: 300px;
+color: white;
+border: 2px solid red;
+}
+
+.big-img{
+ background: url('./big.jpeg');
+ /* la imagen se repite igual si el div crece, ya que tiene repeat por default */
+ /* background-repeat:round; */
+ /* intentará ajustar la imagen al div, pero si el div se agranda repeirá la imagen */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* si la imagen es grande y el div crece al expandirse la pantalla, entonces la imagen crecerá también y no cubrirá de forma exacta el div */
+  background-position: center;
+ 
+}
+.small-img{
+ background: url('./small.jpeg');
+ /* background-repeat:repeat;
+ background-repeat:repeat-x;
+ background-repeat: repeat-y;
+ background-repeat:space;
+  */
+ background-repeat: no-repeat;
+  background-size: cover;
+/* por ser pequeña la imagen, la resolución será horrible si el div es más grande que la imagen */
+
+background-position: center;
+/* se sitúa al centro del div */
+/* background-position: left;
+background-position: right;
+
+background-position: bottom;
+background-position: top;
+background-position: left;
+background-position: 0 0;
+background-position: 20% 50%;
+background-position: 100% 100%; */
+
+
+}
+.folder-img{
+ background: url('./images/folder-img.jpeg');
+ background-repeat: no-repeat;
+ background-size: contain;
+/* aún así sobra espacio porque la imagen no es lo suficiente grande para el div y a la vez respetar el ratio de imagen */
+}

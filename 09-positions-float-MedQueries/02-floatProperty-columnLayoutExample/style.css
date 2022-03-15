@@ -1,0 +1,31 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+div{
+ height: 200px;
+ /* width: 33.33%; si es que es con 3 divs*/
+ /* width: 25%; con 4 divs */
+ width: 50%;
+ float:right;
+}
+
+.one{
+ background:red;
+}
+.two{
+ background:green;
+}
+.three{
+ background:blue;
+}
+.four{
+ background:yellow;
+}
+/* asegúrate de que los elementos que le siguen a los floats usen clear, porque sino este elemento h1 por ejemplo, entraría donde está el cuadro blanco*/
+h1{
+ clear:both;
+}
+

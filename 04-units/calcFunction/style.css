@@ -1,0 +1,19 @@
+/* CALC ()
+PERFORM MATH OPERATIONS +-* /
+MIX AND MATCH VALUES */
+* {
+  margin: 0;
+}
+.navbar {
+  background: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+}
+
+.banner {
+  background: red;
+  /* height:100vh; si pongo esto sin calc, entonces está ocupando 100% de la altura de la ventana pero con el navbar de arriba, sobraría el banner hacia abajo y no se ajustaría bien a la ventana completa de forma precisa, para esto le resto los 100px del navbar con calc*/
+  /* el espacio importa entre las operaciones dentro la función calc */
+  height: calc(100vh - 100px);
+}
