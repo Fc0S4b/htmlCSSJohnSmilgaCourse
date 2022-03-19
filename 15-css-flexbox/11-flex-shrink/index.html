@@ -7,27 +7,19 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>CSS flexbox</title>
  <link rel="stylesheet" href="style.css">
- <!-- flex-grow all children have flex-grow:0 -->
+ <!-- flex-skrink all children have flex-skrink:1-->
  <style>
   .container {
    display: flex;
-  /* el espacio que se ve en el contenedor después del item 5 es porque tiene flex-grow:0 por default */
-
+   /* flex-wrap: wrap; asignar espacio suficiente para todos los items dentro del contenedor */
   }
-/* .box{ */
- /* rellenar todo el container de forma exacta independiente del ancho de pantalla y de la cantidad de items*/
- /* flex-grow: 1;
-} */
 
-.box-1{
- /* si crece el contenedor, crecerá solo la caja 1 si es que tiene flex-grow: 1*/
- /* con flex-grow:2 y box-2 con flex-grow:1, significa que crecerá tanto la caja 1 como la 2 cuando cambie el ancho del contenedor padre, pero crecerá 1 más que 2 */
- flex-grow: 2;
-}
-.box-2{
- flex-grow: 1;
-}
-  
+  .box-2 {
+   width: 300px;
+   /* si se achica la pantalla, la caja 2 no respetará los 300px de ancho porque tiene flex-shrink:1 */
+   flex-shrink: 0;
+   /* con flex-shrink:0 se respetará el ancho asignado independiente del tamaño del contenedor */
+  }
  </style>
 </head>
 

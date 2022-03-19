@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS flexbox</title>
+ <link rel="stylesheet" href="style.css">
+ <!-- flex-basics base value and flex shortcut -->
+ <style>
+  .container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+  }
+
+  .box {
+   /* no quiero que mis cajas sean menor que 150px */
+   /* flex-basis: 150px; */
+   /* el problema es cuando tengamos padding en izquierda y derecha, si se agrega padding, el relleno no se aplica al ancho real, se resetea con border-box  */
+   /* cuando no haya espacio para los 150px en cada caja, se aplicará el flex-wrap:wrap para dar espacio suficiente a los items */
+
+   /* forma abreviada */
+   flex: 1 0 200px;
+   /* flex-grow flex-shrink flex-basis*/
+
+   /* para columnas se usa valores porcentuales no absolutos para dividir el ancho total en 5 columnas (5 items) sin embargo cuando se achica la pantalla se wrapea porque estamos agregando padding alrededor, para arreglarlo se ajusta el padding en padding: 30px 0; (0 para izquierda y derecha)*/
+   /* flex: 0 0 20%; */
+
+   /* ahora si queremos tener un margen, se puede usar calc restando el ancho del margen a los anchos de columnas */
+   flex: 0 0 calc(20% - 1rem);
+   /* y para situar el margen entre los items, se usa justify-content: space-around */
+
+  }
+ </style>
+</head>
+
+<body>
+ <!-- parent = flex-container -->
+ <div class="container">
+  <!-- children = flex-items -->
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <!-- <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div> -->
+
+ </div>
+ <!-- <div class="container-1">
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+
+ </div> -->
+
+
+</body>
+
+</html>
