@@ -7,29 +7,15 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>CSS flexbox</title>
  <link rel="stylesheet" href="style.css">
+ <!-- flex-grow all children have flex-grow:0 -->
  <style>
-  /* MAIN AXIS / CROSS AXIS */
-  /* en flexbox row el main axis o eje principal va en la misma dirección que en el ancho y el cross axis va en la dirección de la altura. En cambio en flexbox column, el main axis va en la dirección de la altura y el cross axis en dirección del ancho. */
   .container {
-   height: 300px;
-   height: 40vh;
    display: flex;
-   /* centrado horizontal */
-   justify-content: center;
-   /* centrado vertical */
-   align-items: center;
+  
+
   }
 
-  .container-1 {
-   height: 800px;
-   border: 5px solid blue;
-   display: flex;
-   flex-direction: column;
-   /* centrado horizontal */
-   align-items: center;
-   /* centrado vertical */
-   justify-content: center;
-  }
+  
  </style>
 </head>
 
@@ -49,14 +35,14 @@
   <div class="box generic">G</div> -->
 
  </div>
- <div class="container-1">
+ <!-- <div class="container-1">
   <div class="box box-1">1</div>
   <div class="box box-2">2</div>
   <div class="box box-3">3</div>
   <div class="box box-4">4</div>
   <div class="box box-5">5</div>
 
- </div>
+ </div> -->
 
 
 </body>
