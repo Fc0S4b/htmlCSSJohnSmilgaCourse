@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS flexbox</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  /* flex-wrap */
+  /* nowrap (default) wrap wrap-reverse */
+  .container {
+   display: flex;
+   /* flex-direction: row === default */
+   /* sin wrap, los elementos que abarquen más espacio que el contenedor padre se amontorán desordenadamente */
+   /* con wrap los contenedores hijos pasan a un nuevo espacio que sea suficiente para contenerlos */
+   /* flex-wrap: nowrap; es default */
+   flex-wrap: wrap;
+   /* flex-wrap: wrap-reverse; da vuelta los elementos envueltos */
+  }
+ </style>
+</head>
+
+<body>
+ <!-- parent = flex-container -->
+ <div class="container">
+  <!-- children = flex-items -->
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+
+
+ </div>
+
+
+</body>
+
+</html>

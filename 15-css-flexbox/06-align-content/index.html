@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS flexbox</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  /* align-content */
+  /* stretch (default) flex-end flex-start space-around space-between center */
+  .container {
+   height: 300px;
+   height: 40vh;
+   display: flex; 
+   flex-wrap: wrap;
+   /* align-content: stretch;default */
+   /* align-content: flex-end; se alinea el contenido al final del contenedor, haciendo coincidir el final del contenido con el final del contenedor*/
+   /* align-content: flex-start;
+   se alinea el contenido superior con la parte superior del contenedor */
+   align-content: center;
+   /* se alinea el centro del contenido con el centro del contenedor  */
+   align-content: space-around;
+   /* deja un espacio entre los extremos y el contenedor y entre los items al medio */
+   /* align-content: space-between; deja un espacio solo al centro y no en los extremos */
+  }
+ </style>
+</head>
+
+<body>
+ <!-- parent = flex-container -->
+ <div class="container">
+  <!-- children = flex-items -->
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+
+
+ </div>
+
+
+</body>
+
+</html>

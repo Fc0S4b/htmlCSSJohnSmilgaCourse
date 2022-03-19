@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS flexbox</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  /* align-items vertical aligment */
+  /* stretch (default, flex-start, flex-end, center, baseline) */
+  .container {
+   height: 300px;
+   height: 40vh;
+   /* la altura del contenedor depende de la altura de los items */
+   display: flex;
+   /* align-items: stretch; default */
+   /* align-items: flex-start;
+   se alinean en la parte superior del container con respecto al container y no al contenido de los items */
+   /* align-items: flex-end;
+   se alinean en la parte inferior del contenedor */
+   /* align-items: center; */
+   /* se alinean los elementos en el centro */
+   align-items: baseline;
+   /* se alinean los items de acuerdo al contenido de los items y no al container (ver ejemplo del item 1 al cambiarle el font size vs el mismo cambio pero con align items en flex-start, en flex-start) un uso común es para usar un navbar con un logo, en donde el logo tiene un tamaño distinto con los otros elementos que se alinean alrededor de este*/
+
+
+
+  }
+ </style>
+</head>
+
+<body>
+ <!-- parent = flex-container -->
+ <div class="container">
+  <!-- children = flex-items -->
+  <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <!-- <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div>
+  <div class="box generic">G</div> -->
+
+
+ </div>
+
+
+</body>
+
+</html>
