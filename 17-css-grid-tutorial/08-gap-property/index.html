@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS grid tutorial</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  /* gap (simplifica el problema que se resolvía al usar flex y la función calc para calcular un width)*/
+  .container {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 5fr 3fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   grid-gap: 50px 100px;
+   /* estas propiedades están obsoletas, en la siguiente lección se enseña la nueva sintaxis */
+
+
+  }
+ </style>
+</head>
+
+<body>
+
+ <div class="container">
+  <div class="cell cell-1">cell 1</div>
+  <div class="cell cell-2">cell 2</div>
+  <div class="cell cell-3">cell 3</div>
+  <div class="cell cell-4">cell 4</div>
+  <div class="cell cell-5">cell 5</div>
+  <div class="cell ">cell 6</div>
+  <div class="cell ">cell 7</div>
+
+ </div>
+</body>
+
+</html>

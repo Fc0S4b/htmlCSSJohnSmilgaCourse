@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS grid tutorial</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  /* rows */
+  .container {
+   /* definiendo la altura se puede apreciar como trabaja grid-template-rows con valor auto (valor responsivo) */
+   min-height: 100vh;
+
+   display: grid;
+   /* grid-template-columns: 200px 7rem 10em 5%; */
+   grid-template-columns: 200px 7rem auto;
+   grid-template-rows: 300px 5rem auto;
+   /* un grid implícito creará una tercera fila porque hay 7 elementos y 2 filas. La tercera fila tiene implícitamente el valor de auto */
+
+  }
+ </style>
+</head>
+
+<body>
+
+ <div class="container">
+  <div class="cell cell-1">cell 1</div>
+  <div class="cell cell-2">cell 2</div>
+  <div class="cell cell-3">cell 3</div>
+  <div class="cell cell-4">cell 4</div>
+  <div class="cell cell-5">cell 5</div>
+  <div class="cell ">cell 6</div>
+  <div class="cell ">cell 7</div>
+
+ </div>
+</body>
+
+</html>
