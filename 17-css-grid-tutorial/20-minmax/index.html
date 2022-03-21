@@ -8,22 +8,15 @@
  <title>CSS grid tutorial</title>
  <link rel="stylesheet" href="style.css">
  <style>
-  /* align-content stretch-default */
+  /* minmax() */
   .container {
    min-height: 100vh;
    display: grid;
-   grid-template-columns: 100px 100px 200px;
-   /* funciona porque hay una altura definida, si no, no hay cambios */
-   /* align-content: center; */
-   grid-template-rows: 200px 200px;
-   /* align-content alinea verticalmente */
-   /* align-content: stretch; es valor default */
-   align-content: flex-start;
-   align-content: flex-end;
-   align-content: space-around;
-   align-content: space-between;
-   align-content: space-evenly;
-
+   grid-template-columns: 1fr minmax(300px, 1fr) 1fr;
+   grid-template-rows: repeat(2, 1fr);
+   /* si achico la pantalla, no quiero que los contenidos de las casillas se achiquen también o viceverza entonces utilizo el hack del minmax */
+   /* minmax(dimensión mínima, dimensión máxima) la dimensión se aplicará dependiendo si está en un grid-template-columns o un grid-template-rows */
+   /* se puede ahorrar mediaqueries usando minmax */
   }
  </style>
 </head>

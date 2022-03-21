@@ -8,22 +8,26 @@
  <title>CSS grid tutorial</title>
  <link rel="stylesheet" href="style.css">
  <style>
-  /* align-content stretch-default */
+  /* align-items justify-items --- content within items */
+  /* justify-self align-self --- single item content */
   .container {
    min-height: 100vh;
    display: grid;
-   grid-template-columns: 100px 100px 200px;
-   /* funciona porque hay una altura definida, si no, no hay cambios */
-   /* align-content: center; */
-   grid-template-rows: 200px 200px;
-   /* align-content alinea verticalmente */
-   /* align-content: stretch; es valor default */
-   align-content: flex-start;
-   align-content: flex-end;
-   align-content: space-around;
-   align-content: space-between;
-   align-content: space-evenly;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   /* align-items: center; se alineará respecto a su propia casilla verticalmente */
+   align-items: flex-start;
+   /* justify-items se alineará desde su propia casilla de forma horizontal */
+   justify-items: center;
+   justify-items: flex-start;
 
+
+  }
+
+  .cell-1 {
+   /* alinear por si solo el elemento */
+   justify-self: end;
+   align-self: flex-end;
   }
  </style>
 </head>

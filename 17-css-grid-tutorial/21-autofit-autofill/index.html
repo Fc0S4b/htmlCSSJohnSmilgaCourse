@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS grid tutorial</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  /* auto-fill keeps creating auto-fit only fits */
+  .container {
+   min-height: 100vh;
+   display: grid;
+   /* número de columnas como tantos items hayan y no tener que adivinar cuantas columnas configurar */
+   /* repeat(auto-fill, 200px) creará columnas a medida que se expanda la pantalla pero no será de forma exacta, habrá espacio sobrante */
+   /* grid-template-columns: repeat(auto-fill, 200px); */
+   /* no hay columnas extras pero si pantalla sobrante */
+   /* grid-template-columns: repeat(auto-fit, 200px); */
+   /* agregando minmax se logra un ajuste completo en el contenedor */
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+
+  }
+
+  .container-1 {
+   display: grid;
+   /* si agrandas la pantalla, pronto verás que hay espacio que sobra a diferencia del auto-fit */
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  /* si tuvieses 1 solo item, con auto-fit se vería muy expandido pero con auto-fill se verá mejor, dependerá del caso usar uno u otro método */
+ </style>
+</head>
+
+<body>
+ <h1>auto fit</h1>
+ <div class="container">
+  <div class="cell cell-1">cell 1</div>
+  <div class="cell cell-2">cell 2</div>
+  <div class="cell cell-3">cell 3</div>
+  <div class="cell cell-4">cell 4</div>
+  <div class="cell cell-5">cell 5</div>
+  <div class="cell cell-6">cell 6</div>
+
+ </div>
+ <h1>auto fill</h1>
+ <div class="container -1">
+  <div class="cell cell-1">cell 1</div>
+  <div class="cell cell-2">cell 2</div>
+  <div class="cell cell-3">cell 3</div>
+  <div class="cell cell-4">cell 4</div>
+  <div class="cell cell-5">cell 5</div>
+  <div class="cell cell-6">cell 6</div>
+
+ </div>
+</body>
+
+</html>
