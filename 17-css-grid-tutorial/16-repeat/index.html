@@ -8,16 +8,11 @@
  <title>CSS grid tutorial</title>
  <link rel="stylesheet" href="style.css">
  <style>
-  /* firefox developer tools */
-  /* en un costado del devtools en firefox se puede activar los números que marcan las líneas en el contenedor grid, se visualiza mejor que en chrome */
+  /* repeat */
   .container {
-   min-height: 100vh;
    display: grid;
-   grid-template-columns: 100px 100px 100px;
-   grid-template-rows: 100px 100px 100px;
-   gap: 1rem;
-
-
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 300px);
 
   }
  </style>
@@ -31,8 +26,7 @@
   <div class="cell cell-3">cell 3</div>
   <div class="cell cell-4">cell 4</div>
   <div class="cell cell-5">cell 5</div>
-  <div class="cell ">cell 6</div>
-  <div class="cell ">cell 7</div>
+  <div class="cell cell-6">cell 6</div>
 
  </div>
 </body>
