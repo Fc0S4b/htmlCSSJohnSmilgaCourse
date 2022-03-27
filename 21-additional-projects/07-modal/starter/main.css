@@ -257,3 +257,69 @@ ul {
 Modal
 ===============
 */
+.hero {
+  min-height: 100vh;
+  background: url('./hero.jpeg') center/cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+.banner {
+  background: var(--white);
+  padding: 4rem 0;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  width: 90vw;
+  text-align: center;
+  max-width: var(--fixed-width);
+}
+
+.modal-overlay {
+  position: fixed;
+  /* background: rgba(73,166,233,0.5);
+ background: rgba(100,92,255,0.5); */
+  background: rgba(0, 0, 0, 0.6);
+
+  /* top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0; */
+  inset: 0;
+  /* width: 100%;
+ height: 100%; */
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+  /* display: none; si se usa esta propiedad, el modal se abriría instantáneamente sin efectos de transición a pesar de que se programen */
+}
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  width: 90vw;
+  height: 35vh;
+  max-width: var(--fixed-width);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  transform: rotate(360deg) scale(1.3);
+}
