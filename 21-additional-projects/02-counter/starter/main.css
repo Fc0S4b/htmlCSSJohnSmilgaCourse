@@ -259,3 +259,37 @@ ul {
 Counter
 ===============
 */
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#value {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.counter-btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--textColor);
+  border: 2px solid var(--textColor);
+  margin: 0.5rem;
+}
+
+.counter-btn:hover {
+  background: var(--textColor);
+  color: var(--white);
+}
