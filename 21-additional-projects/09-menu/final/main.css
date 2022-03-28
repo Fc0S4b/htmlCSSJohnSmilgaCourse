@@ -327,6 +327,6 @@ Menu
     grid-template-columns: 1fr 1fr;
   }
   .photo {
-    height: 150px;
+    height: start;
   }
 }
